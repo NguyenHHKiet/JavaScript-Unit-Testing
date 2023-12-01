@@ -1,4 +1,4 @@
 export function transformToNumber(value) {
-  return +value;
+    // return NaN; typeof number
+    return +value;
 }
-
