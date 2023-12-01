@@ -4,6 +4,12 @@ import { User } from "./hooks";
 const testEmail = "test@test.com";
 let user;
 
+/*
+Các chức năng này cho phép bạn tham gia vào vòng đời của các thử nghiệm để tránh lặp lại mã thiết lập và mã phân hủy. 
+Chúng áp dụng cho ngữ cảnh hiện tại: tệp nếu chúng được sử dụng ở cấp cao nhất hoặc bộ hiện tại nếu chúng nằm trong khối mô tả. 
+Những hook này không được gọi khi bạn chạy Vitest dưới dạng trình kiểm tra kiểu.
+*/
+
 beforeAll(() => {
     user = new User(testEmail);
     console.log("beforeAll()");
