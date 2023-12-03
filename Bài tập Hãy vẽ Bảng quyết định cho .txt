@@ -1,0 +1,42 @@
+Bài tập: Hãy vẽ Bảng quyết định cho chức năng thư viện.
+Gồm 3 condition là "User Register!" và "No outstanding fees?" và "Under borow limit?" với mỗi condition gồm 2 giá trị True/False.
+
+Bảng quyết định (Decision Table) là một công cụ để biểu diễn tất cả các trường hợp có thể xảy ra cho một chức năng hoặc hệ thống dựa trên các điều kiện đầu vào. Dưới đây là bảng quyết định cho chức năng thư viện với 3 điều kiện "User Register!" (Người dùng đã đăng ký hay chưa?), "No outstanding fees?" (Không còn phí nợ?) và "Under borrow limit?" (Dưới giới hạn mượn sách?):
+
+| User Register! | No outstanding fees? | Under borrow limit? | Action                |
+|----------------|----------------------|----------------------|----------------------|
+| True           | True                 | True                 | Cho phép mượn sách   |
+| True           | True                 | False                | Không cho mượn sách  |
+| True           | False                | True                 | Không cho mượn sách  |
+| True           | False                | False                | Không cho mượn sách  |
+| False          | -                    | -                    | Không cho mượn sách  |
+
+Trong bảng quyết định này:
+
+- "User Register!" có 2 giá trị: True (Người dùng đã đăng ký) hoặc False (Người dùng chưa đăng ký).
+- "No outstanding fees?" có 2 giá trị: True (Không còn phí nợ) hoặc False (Có phí nợ).
+- "Under borrow limit?" có 2 giá trị: True (Dưới giới hạn mượn sách) hoặc False (Vượt quá giới hạn mượn sách).
+
+Bảng quyết định này biểu diễn tất cả các trường hợp có thể xảy ra dựa trên các điều kiện đầu vào và quyết định xem người dùng có được phép mượn sách hay không.
+
+
+//////////////////////////////////////////////////////////
+
+Dưới đây là Bảng quyết định (Decision Table) cho chức năng thư viện với 3 điều kiện là "User Register!" (Người dùng đã đăng ký), "No outstanding fees?" (Không có phí nợ) và "Under borrow limit?" (Dưới ngưỡng mượn sách), mỗi điều kiện có 2 giá trị True/False:
+
+| User Register! |No outstanding fees? | Under borrow limit? | Action            |
+|----------------|---------------------|---------------------|-------------------|
+|      True      |        True         |        True         | Allow borrowing   |
+|      True      |        True         |        False        | Prevent borrowing |
+|      True      |        False        |        True         | Prevent borrowing |
+|      True      |        False        |        False        | Prevent borrowing |
+|     False      |        True         |        True         | Allow borrowing   |
+|     False      |        True         |        False        | Prevent borrowing |
+|     False      |        False        |        True         | Prevent borrowing |
+|     False      |        False        |        False        | Prevent borrowing |
+
+Trong Bảng quyết định trên, chúng ta sử dụng giá trị True để biểu thị rằng điều kiện đó đúng và giá trị False để biểu thị rằng điều kiện đó sai. Bảng mô tả tất cả các trường hợp có thể xảy ra dựa trên các giá trị của 3 điều kiện và ghi lại hành động tương ứng.
+
+Các hành động được ghi lại trong cột "Action" phụ thuộc vào các giá trị của các điều kiện. Ví dụ, nếu người dùng đã đăng ký, không có phí nợ và nằm dưới ngưỡng mượn sách, thì cho phép mượn sách (Allow borrowing). Ngược lại, nếu một trong các điều kiện không đáp ứng, thì ngăn không cho mượn sách (Prevent borrowing).
+
+Bảng quyết định giúp hiển thị tất cả các trường hợp có thể xảy ra để xác định hành động cần thực hiện tương ứng với các giá trị của các điều kiện.
