@@ -12,7 +12,8 @@
     "license": "ISC",
     "dependencies": {
         "firebase": "^10.7.0",
-        "http-server": "^14.1.0"
+        "http-server": "^14.1.0",
+        "jsonwebtoken": "^9.0.2"
     },
     "devDependencies": {
         "happy-dom": "^2.55.0",
