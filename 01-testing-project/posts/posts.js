@@ -2,7 +2,8 @@ import { sendDataRequest } from "../util/http.js";
 import { validateNotEmpty } from "../util/validation.js";
 
 export function savePost(postData) {
-    postData.created = new Date();
+    const today = new Date();
+    postData.created = today.toLocaleDateString("en-US");
     return sendDataRequest(postData);
 }
 

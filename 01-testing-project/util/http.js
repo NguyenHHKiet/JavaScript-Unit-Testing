@@ -1,6 +1,6 @@
 import { HttpError } from "./errors.js";
 
-const url = "https://react-http-6e69f-default-rtdb.firebaseio.com/testing";
+const url = "https://react-http-6e69f-default-rtdb.firebaseio.com/testing.json";
 
 export async function sendDataRequest(data) {
     console.log(data);
@@ -8,6 +8,7 @@ export async function sendDataRequest(data) {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
         },
         body: JSON.stringify(data),
     });
