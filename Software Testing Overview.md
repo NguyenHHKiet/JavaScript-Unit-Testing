@@ -41,18 +41,18 @@ Quản lý dự án, lập trình viên, nhân viên quản trị hạ tầng h�
 
 ## Các Khái Niệm
 
-**Error (Lỗi) (hay mistake)** là lỗi, nhầm lẫn do con người gây ra.
-**Fault (Sai Sót) (hay Defect)** là kết quả của một error, fault có thể là do dư hoặc thiếu hoặc không đúng với các yêu cầu phần mềm cần thực hiện.
-**Failure (Hỏng)** phần mềm không thể thực hiện các chức năng được mô tả trong yêu cầu.
+**Error (Lỗi) (hay mistake)** là lỗi, nhầm lẫn do con người gây ra.<br/>
+**Fault (Sai Sót) (hay Defect)** là kết quả của một error, fault có thể là do dư hoặc thiếu hoặc không đúng với các yêu cầu phần mềm cần thực hiện.<br/>
+**Failure (Hỏng)** phần mềm không thể thực hiện các chức năng được mô tả trong yêu cầu.<br/>
 **Incident (Biến Cố)** là những trường hợp hệ thống có những thực thi đáng nghi ngờ những chưa chắc là lỗi.
-**Test Case** là đặc tả dữ liệu đầu vào, dữ liệu ra mong muốn, và bản mô tả những điều kiện, các bước để kiểm thử.
-**Test Suite** là nhóm các test case hoặc thủ tục kiểm thử có liên quan đến nhau.
-**Stub** là một mẫu chương trình mô phỏng hoạt động của thành phần hệ thống đang thiếu.
-Driver là một mẫu chương trình gọi test case được thực thi, nhận kết quả và xuất ra.
-![image](https://www.differencebetween.info/sites/default/files/images/6/stub-vs-driver.jpg)
-[Difference between Stub and Driver](https://www.differencebetween.info/difference-between-stub-and-driver)
-**QA (Âulity Asurance)** là những kế hoạch, hoạt động mang tính hệ thống nhầm đảm bảo quá trình phát triển sẽ tạo ra những sản phẩm có chất lượng đáp ứng yêu cầu client.
-**QC (Quanlity Control)** là những hoạt động, kỹ thuật nhầm đảm bảo chất lượng sản phẩm.
+**Test Case** là đặc tả dữ liệu đầu vào, dữ liệu ra mong muốn, và bản mô tả những điều kiện, các bước để kiểm thử.<br/>
+**Test Suite** là nhóm các test case hoặc thủ tục kiểm thử có liên quan đến nhau.<br/>
+**Stub** là một mẫu chương trình mô phỏng hoạt động của thành phần hệ thống đang thiếu.<br/>
+Driver là một mẫu chương trình gọi test case được thực thi, nhận kết quả và xuất ra.<br/>
+![image](https://www.differencebetween.info/sites/default/files/images/6/stub-vs-driver.jpg)<br/>
+[Difference between Stub and Driver](https://www.differencebetween.info/difference-between-stub-and-driver)<br/>
+**QA (Âulity Asurance)** là những kế hoạch, hoạt động mang tính hệ thống nhầm đảm bảo quá trình phát triển sẽ tạo ra những sản phẩm có chất lượng đáp ứng yêu cầu client.<br/>
+**QC (Quanlity Control)** là những hoạt động, kỹ thuật nhầm đảm bảo chất lượng sản phẩm.<br/>
 **Testing** là các hoạt động thực thi chương trình nhầm xác định các lỗi trong sản phẩm phần mềm, không bao gồm việc sửa (fixed) các lỗi đã xác định.
 
 ## Các Cấp Độ Kiểm Thử
