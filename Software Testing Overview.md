@@ -77,11 +77,11 @@ Tương ứng với các giai đoạn trong quy trình phát triển phần mề
 
 ### Unit Test
 
-Một đơn vị (Unit) là một thành phần nhỏ nhất có thể kiểm thử được, nó có thể là một hàm, một thủ tục, một phương thức, hoặc một lớp. Các đơn vị thường được phát triển độc lập, việc tích hợp được thực hiện ở các giai đoạn sau đó.
+`Một đơn vị (Unit)` là một thành phần nhỏ nhất có thể kiểm thử được, nó có thể là một hàm, một thủ tục, một phương thức, hoặc một lớp. Các đơn vị thường được phát triển độc lập, việc tích hợp được thực hiện ở các giai đoạn sau đó.
 
-Kiểm thử đơn vị (Unit Test) dùng kiểm thử trên từng đơn vị riêng rẽ, thường được thực hiện bởi chính lập trình viên phát triển đơn vị đó. Lập trình viên dựa trên đặc tả yêu cầu xác định các đầu vào và đầu ra mong muốn.
+`Kiểm thử đơn vị (Unit Test)` dùng kiểm thử trên từng đơn vị riêng rẽ, thường được thực hiện bởi chính lập trình viên phát triển đơn vị đó. Lập trình viên dựa trên đặc tả yêu cầu xác định các đầu vào và đầu ra mong muốn.
 
-Một tiếp cận cho kiểm thử đơn vị là Test-Driven Development (TDD)
+Một tiếp cận cho kiểm thử đơn vị là `Test-Driven Development (TDD)`<br/>
 Theo tiếp cận này, các test case sẽ được viết trước, sau đó mới viết mã nguồn của đơn vị đó, rồi chạy kiểm thử, thay đổi nếu cần cho đến khi các test case đều chạy thành công (pass).
 ![image](https://allma.si/blog/wp-content/uploads/2022/08/vitest-coverage-report.png)
 
