@@ -1,6 +1,4 @@
-# Tổng Quan Kiểm Thử Phần Mềm
-
-## Quy Trình Phát Triển Phần Mềm
+# Các Quy Trình Phát Triển Phần Mềm
 
 Quy trình phát triển phần mềm là các giai đoạn mà phát triển phần mềm phải trải qua để sản xuẩt phát triển phần mềm, mỗi giai đoạn phải được xác định rõ ràng:
 
