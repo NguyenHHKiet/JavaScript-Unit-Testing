@@ -47,18 +47,14 @@ Các quy trình phát triển phần mềm thường được chia thành: Quy t
 
 <strong><em>Các Tài Liệu</em></strong>
 
-<ul>
-<li>`Product Backlog` là danh sách ưu tiên các chức năng tồn tại trong suốt quy trình phát triển phần mềm chỉ có một tài liệu Product Backlog cho một sản phẩm.</li>
-<li>`Sprint Backlog` là danh sách các chức năng ưu tiên (lấy từ Product Backlog) cần hoàn tấtt trong 1 Sprint.</li>
-</ul>
+-   `Product Backlog` là danh sách ưu tiên các chức năng tồn tại trong suốt quy trình phát triển phần mềm chỉ có một tài liệu Product Backlog cho một sản phẩm.
+-   `Sprint Backlog` là danh sách các chức năng ưu tiên (lấy từ Product Backlog) cần hoàn tấtt trong 1 Sprint.
 
 <strong><em>Các Vai Trò</em></strong>
 
-<ul>
-<li>`Product Owner` người khởi động dự án, tạo ra các chức năng dự án, quyết định các chức năng, đáng giá độ ưu tiên của từng nhiệm trong Product Backlog. Vai trò này thường là client hoặc người đại diện cho client.</li>
-<li>`Scrum Master` người có nhiệm vụ đảm bảo Sprint hoàn thành đúng mục tiêu, giải quyết các xung đột, trở ngại, cũng như bảo vệ nhóm phát triển.</li>
-<li>`Nhóm phát triển (Develper Team)` là những thành viên tham gia vào cài đặt các chức năng theo yêu cầu, quản lý Sprint Backlog, giữa các thành viên trong nhóm có vai trò như nhau, tự quản lý, tổ chức công việc sao cho hiệu quả nhất.</li>
-</ul>
+-   `Product Owner` người khởi động dự án, tạo ra các chức năng dự án, quyết định các chức năng, đáng giá độ ưu tiên của từng nhiệm trong Product Backlog. Vai trò này thường là client hoặc người đại diện cho client.
+-   `Scrum Master` người có nhiệm vụ đảm bảo Sprint hoàn thành đúng mục tiêu, giải quyết các xung đột, trở ngại, cũng như bảo vệ nhóm phát triển.
+-   `Nhóm phát triển (Develper Team)` là những thành viên tham gia vào cài đặt các chức năng theo yêu cầu, quản lý Sprint Backlog, giữa các thành viên trong nhóm có vai trò như nhau, tự quản lý, tổ chức công việc sao cho hiệu quả nhất.
 
 <strong><em>Các Buổi Họp</em></strong>
 
