@@ -2,7 +2,7 @@
 
 Quy trình phát triển phần mềm là các giai đoạn mà phát triển phần mềm phải trải qua để sản xuẩt phát triển phần mềm, mỗi giai đoạn phải được xác định rõ ràng:
 
-> `- Mục tiêu` > `- Kết quả đạt được của giai đoạn trước` > `- Kết quả chuyển giai cho giai đoạn tiếp theo`
+> `1. Mục tiêu` > `2. Kết quả đạt được của giai đoạn trước` > `3. Kết quả chuyển giai cho giai đoạn tiếp theo`
 
 Thực tế có nhiều quy trình phát triển phần mềm khác nhau, nhưng nhìn chung các quy trình phát triển phần mềm đều có các giai đoạn sau:
 
@@ -26,9 +26,9 @@ Các quy trình phát triển phần mềm thường được chia thành: Quy t
 
 <h3>Quy trình Thác nước (Waterfall Model)</h3>
 
-[Truy cập >](https://www.google.com.vn/url?sa=i&url=https%3A%2F%2Famela.vn%2Fban-hieu-gi-ve-mo-hinh-thac-nuoc-waterfall-model-trong-phat-trien-phan-mem%2F&psig=AOvVaw38QDOaQrKTpbbKa_gMrOSf&ust=1702548333834000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCPj2v5aVjIMDFQAAAAAdAAAAABAD)
-
 ![image](https://amela.vn/wp-content/uploads/2021/04/waterfall-01-scaled.jpg)
+
+[Truy cập >](https://www.google.com.vn/url?sa=i&url=https%3A%2F%2Famela.vn%2Fban-hieu-gi-ve-mo-hinh-thac-nuoc-waterfall-model-trong-phat-trien-phan-mem%2F&psig=AOvVaw38QDOaQrKTpbbKa_gMrOSf&ust=1702548333834000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCPj2v5aVjIMDFQAAAAAdAAAAABAD)
 
 <h3>Quy trình Lặp (Iterative Process)</h3>
 
@@ -54,7 +54,7 @@ Các quy trình phát triển phần mềm thường được chia thành: Quy t
 
 -   `Product Owner` người khởi động dự án, tạo ra các chức năng dự án, quyết định các chức năng, đáng giá độ ưu tiên của từng nhiệm trong Product Backlog. Vai trò này thường là client hoặc người đại diện cho client.
 -   `Scrum Master` người có nhiệm vụ đảm bảo Sprint hoàn thành đúng mục tiêu, giải quyết các xung đột, trở ngại, cũng như bảo vệ nhóm phát triển.
--   `Nhóm phát triển (Develper Team)` là những thành viên tham gia vào cài đặt các chức năng theo yêu cầu, quản lý Sprint Backlog, giữa các thành viên trong nhóm có vai trò như nhau, tự quản lý, tổ chức công việc sao cho hiệu quả nhất.
+-   `Nhóm phát triển (Developer Team)` là những thành viên tham gia vào cài đặt các chức năng theo yêu cầu, quản lý Sprint Backlog, giữa các thành viên trong nhóm có vai trò như nhau, tự quản lý, tổ chức công việc sao cho hiệu quả nhất.
 
 <strong><em>Các Buổi Họp</em></strong>
 
@@ -69,9 +69,9 @@ Các quy trình phát triển phần mềm thường được chia thành: Quy t
     Cuộc họp này là Sprint Plainning Meeting.
 </p>
 
-[Quy trình Scrum – các hoạt động Scrum](http://quanlyduan.edu.vn/quy-trinh-scrum-cac-hoat-dong-scrum/)
-
 ![image](https://i0.wp.com/quanlyduan.edu.vn/wp-content/uploads/2015/07/Quy-trinh-scrum-1.png)
+
+[Quy trình Scrum – các hoạt động Scrum](http://quanlyduan.edu.vn/quy-trinh-scrum-cac-hoat-dong-scrum/)
 
 ## Author
 
