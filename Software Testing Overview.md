@@ -41,18 +41,29 @@ Quản lý dự án, lập trình viên, nhân viên quản trị hạ tầng h�
 
 ## Các Khái Niệm
 
-**Error (Lỗi) (hay mistake)** là lỗi, nhầm lẫn do con người gây ra.<br/>
-**Fault (Sai Sót) (hay Defect)** là kết quả của một error, fault có thể là do dư hoặc thiếu hoặc không đúng với các yêu cầu phần mềm cần thực hiện.<br/>
-**Failure (Hỏng)** phần mềm không thể thực hiện các chức năng được mô tả trong yêu cầu.<br/>
+**Error (Lỗi) (hay mistake)** là lỗi, nhầm lẫn do con người gây ra.
+
+**Fault (Sai Sót) (hay Defect)** là kết quả của một error, fault có thể là do dư hoặc thiếu hoặc không đúng với các yêu cầu phần mềm cần thực hiện.
+
+**Failure (Hỏng)** phần mềm không thể thực hiện các chức năng được mô tả trong yêu cầu.
+
 **Incident (Biến Cố)** là những trường hợp hệ thống có những thực thi đáng nghi ngờ những chưa chắc là lỗi.
-**Test Case** là đặc tả dữ liệu đầu vào, dữ liệu ra mong muốn, và bản mô tả những điều kiện, các bước để kiểm thử.<br/>
-**Test Suite** là nhóm các test case hoặc thủ tục kiểm thử có liên quan đến nhau.<br/>
-**Stub** là một mẫu chương trình mô phỏng hoạt động của thành phần hệ thống đang thiếu.<br/>
-Driver là một mẫu chương trình gọi test case được thực thi, nhận kết quả và xuất ra.<br/>
-![image](https://www.differencebetween.info/sites/default/files/images/6/stub-vs-driver.jpg)<br/>
-[Difference between Stub and Driver](https://www.differencebetween.info/difference-between-stub-and-driver)<br/>
-**QA (Âulity Asurance)** là những kế hoạch, hoạt động mang tính hệ thống nhầm đảm bảo quá trình phát triển sẽ tạo ra những sản phẩm có chất lượng đáp ứng yêu cầu client.<br/>
-**QC (Quanlity Control)** là những hoạt động, kỹ thuật nhầm đảm bảo chất lượng sản phẩm.<br/>
+
+**Test Case** là đặc tả dữ liệu đầu vào, dữ liệu ra mong muốn, và bản mô tả những điều kiện, các bước để kiểm thử.
+
+**Test Suite** là nhóm các test case hoặc thủ tục kiểm thử có liên quan đến nhau.
+
+**Stub** là một mẫu chương trình mô phỏng hoạt động của thành phần hệ thống đang thiếu.
+Driver là một mẫu chương trình gọi test case được thực thi, nhận kết quả và xuất ra.
+
+![image](https://www.differencebetween.info/sites/default/files/images/6/stub-vs-driver.jpg)
+
+[Difference between Stub and Driver](https://www.differencebetween.info/difference-between-stub-and-driver)
+
+**QA (Quanlity Asurance)** là những kế hoạch, hoạt động mang tính hệ thống nhầm đảm bảo quá trình phát triển sẽ tạo ra những sản phẩm có chất lượng đáp ứng yêu cầu client.
+
+**QC (Quanlity Control)** là những hoạt động, kỹ thuật nhầm đảm bảo chất lượng sản phẩm.
+
 **Testing** là các hoạt động thực thi chương trình nhầm xác định các lỗi trong sản phẩm phần mềm, không bao gồm việc sửa (fixed) các lỗi đã xác định.
 
 ## Các Cấp Độ Kiểm Thử
@@ -89,6 +100,53 @@ Theo tiếp cận này, các test case sẽ được viết trước, sau đó m
 
 ### Integration Test
 
+![image](https://d3hi6wehcrq5by.cloudfront.net/itnavi-blog/2020/11/Integration-Testing-l%C3%A0-g%C3%AC-3.jpg)
+
+`Kiểm thử tích hợp (Integration Test)` sẽ được thực hiện sau khi kết hợp các đơn vị, thành phần riêng rẽ với nhau và tập trung kiểm thử sự tương tác giữa chúng nhầm phát hiện lỗi.
+
+`Kiểm thử tích hợp` cần các tài liệu: Thiết kế hệ thống, lược đồ kiến trúc hệ thống, các luồng hoạt động (workflows) và các use case.
+
+Trước khi lên kế hoạch kiểm thử tích hợp, ta cần xác định chiến lược tích hợp để quyết định cách thức các thành phần tích hợp lại với nhau. Các chiến lược tích hợp thường dùng như <em>chiến lược big-bang, chiến lược tăng trưởng (incremental)</em>
+
+-   `**Chiến lược Big-Bang**`: tất cả các đơn vị, thành phần được tích hợp cùng một lúc để có hệ thống đầy đủ.
+-   `**Chiến lược Incremental**`: chiến lược này kiểm thử từng phần riêng biệt. Hai chiến lược Incremental thường được dùng sử dụng là top-down và bottom-up.
+
 ### System Test
 
+`Kiểm thử hệ thống (System Test)` thực hiện kiểm thử trên hệ thống đầy đủ sau khi các thành phần đã được tích hợp. mục đích chính của kiểm thử hệ thống nhằm đảm bảo hệ thống tuân thủ các đặc tả yêu cầu của người dùng.
+
+Đặc tả yêu cầu thường chứa các yêu cầu chức năng (functional requirement) và các yêu cầu phi chức năng (non-functional requirement) cần được kiểm thử.
+
+#### Yêu cầu chức năng
+
+Yêu cầu chức năng là các yêu cầu chỉ định các chức năng của hệ thống hoặc các thành phần cần được thực hiện, nó chỉ định chi tiết những gì (WHAT) hệ thống cần làm. Chẳng hạn chức năng tìm kiếm sản phẩm, đặt hàng hoặc thanh toán.
+
+Kiểm thử chức năng (functional testing) nhằm xác định hệ thống thực hiện và hoạt động thiết kế đúng trong đặc tả yêu cầu.
+
+#### Yêu cầu phi chức năng
+
+Yêu cầu phi chức năng là những yêu cầu không liên quan đến các dịch vụ được chỉ định, mầ liên quan đến những thuộc tính ràng buộc hệ thống như tính tin cậy, tính hiệu quả, tính khả dụng, v.v. (xem lại đáng giá chất lượng phần mềm)
+
+`**Kiểm thử hiệu năng (Performance Testing)**` nhằm xác định một số vần đề thắt cổ chai (bottleneck) hoặc hiệu năng hoạt động của hệ thống.
+Một số loại kiểm thử liên quan:
+
+-   `Kiểm thử tính bến vũng (Endurance Testing)`
+-   `Kiểm thử tính mở rộng (Scalability Testing)`
+-   `Kiểm thử khối lượng (Volume Testing)`
+-   `Kiểm thử khả năng chịu tải (Load Testing)`
+-   `Kiểm thử khả năng chị áp lục (Stress Testing)`
+-   `Kiểm thử khả năng đột biến (Spike Testing)`
+
 ### Acceptance Test
+
+`Kiểm thử chấp nhận (Acceptance Test)` được thực hiện chính bởi client nhằm cung cấp tính tin cập hệ thống, đảm bảo sản phẩm hoạt động đúng những gì client mong đợi. Với những sản phẩm có người dùng đa dạng thường có 2 loại kiểm thử chấp nhận là `Alpha Testing` và `Beta Testing`.
+
+#### Alpha Testing
+
+Alpha Testing giúp phát hiện những vấn đề thực tế khi sử dụng phần mềm mà nhóm phát triển (dev) chưa biết.
+
+#### Beta Testing
+
+Beta Testing giúp phát hiện những vấn đề sự tương tác giữa phần mềm và những đặc trưng trong môi trường nó thực sự được sử dụng.
+
+> Beta Testing phải thực hiện sau Alpha Testing
