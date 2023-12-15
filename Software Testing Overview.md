@@ -4,11 +4,11 @@
 
 Mục đích chính của `Kiểm thử` là để phát hiện những trường hợp hệ thống có lỗi, thiết sót, dư thừa (Defect Testing) hoặc hoạt động không đúng với đặc tả (Validation Testing).
 
-#### Tầm Quan Trọng của Kiểm Thử Phần Mềm
+##### Tầm Quan Trọng của Kiểm Thử Phần Mềm
 
 Kiểm thử phần mềm (Software Testing) là công đoạn quan trọng để đảm bảo chất lượng phần mềm trước khi sản phẩm đến tay client. Nó giúp tăng tính tin cậy của client và dev về sản phẩm, cũng như giảm thiểu chi phí, rủi ro giải quyết các vấn đề trong quá trình phát triển.
 
-#### Chất Lượng Phần Mềm
+##### Chất Lượng Phần Mềm
 
 Để quyết định chúng có chất lượng cao hay không có thể đánh giá thông qua các thuộc tính chất lượng.
 
@@ -20,7 +20,7 @@ Kiểm thử phần mềm (Software Testing) là công đoạn quan trọng đ�
 -   `Tính Bảo Trì (Maintainability)`: công sức (Effort) cần thiết để thực hiện các thay đổi trong phần mềm.
 -   `Tính Tương Tác (Interoperability)`: công sức (Effort) cần thiết để liên kế hệ thống này đến một hệ thống khác.
 
-#### Phân Loại Kiểm Thử Phần Mềm
+##### Phân Loại Kiểm Thử Phần Mềm
 
 ![image](https://assets-global.website-files.com/619e15d781b21202de206fb5/636b964bcbddd712f496e592_comparative-guide-to-automation-and-manual-testing-blog.webp)
 
@@ -29,7 +29,7 @@ Kiểm thử phần mềm (Software Testing) là công đoạn quan trọng đ�
 
 [A Comparative Guide to Automation and Manual Testing](https://www.headspin.io/blog/automation-and-manual-testing)
 
-#### Ai thực hiện việc kiểm thử?
+##### Ai thực hiện việc kiểm thử?
 
 Quản lý dự án, lập trình viên, nhân viên quản trị hạ tầng hệ thống, người dùng cuối, nhân viên thiết kế, v.v
 
@@ -108,26 +108,26 @@ Theo tiếp cận này, các test case sẽ được viết trước, sau đó m
 
 Trước khi lên kế hoạch kiểm thử tích hợp, ta cần xác định chiến lược tích hợp để quyết định cách thức các thành phần tích hợp lại với nhau. Các chiến lược tích hợp thường dùng như <em>chiến lược big-bang, chiến lược tăng trưởng (incremental)</em>
 
--   `**Chiến lược Big-Bang**`: tất cả các đơn vị, thành phần được tích hợp cùng một lúc để có hệ thống đầy đủ.
--   `**Chiến lược Incremental**`: chiến lược này kiểm thử từng phần riêng biệt. Hai chiến lược Incremental thường được dùng sử dụng là top-down và bottom-up.
+-   **`Chiến lược Big-Bang`**: tất cả các đơn vị, thành phần được tích hợp cùng một lúc để có hệ thống đầy đủ.
+-   **`Chiến lược Incremental`**: chiến lược này kiểm thử từng phần riêng biệt. Hai chiến lược Incremental thường được dùng sử dụng là top-down và bottom-up.
 
 ### System Test
 
 `Kiểm thử hệ thống (System Test)` thực hiện kiểm thử trên hệ thống đầy đủ sau khi các thành phần đã được tích hợp. mục đích chính của kiểm thử hệ thống nhằm đảm bảo hệ thống tuân thủ các đặc tả yêu cầu của người dùng.
 
-Đặc tả yêu cầu thường chứa các yêu cầu chức năng (functional requirement) và các yêu cầu phi chức năng (non-functional requirement) cần được kiểm thử.
+Đặc tả yêu cầu thường chứa các **yêu cầu chức năng (functional requirement)** và các **yêu cầu phi chức năng (non-functional requirement)** cần được kiểm thử.
 
-#### Yêu cầu chức năng
+##### Yêu cầu chức năng
 
 Yêu cầu chức năng là các yêu cầu chỉ định các chức năng của hệ thống hoặc các thành phần cần được thực hiện, nó chỉ định chi tiết những gì (WHAT) hệ thống cần làm. Chẳng hạn chức năng tìm kiếm sản phẩm, đặt hàng hoặc thanh toán.
 
 Kiểm thử chức năng (functional testing) nhằm xác định hệ thống thực hiện và hoạt động thiết kế đúng trong đặc tả yêu cầu.
 
-#### Yêu cầu phi chức năng
+##### Yêu cầu phi chức năng
 
 Yêu cầu phi chức năng là những yêu cầu không liên quan đến các dịch vụ được chỉ định, mầ liên quan đến những thuộc tính ràng buộc hệ thống như tính tin cậy, tính hiệu quả, tính khả dụng, v.v. (xem lại đáng giá chất lượng phần mềm)
 
-`**Kiểm thử hiệu năng (Performance Testing)**` nhằm xác định một số vần đề thắt cổ chai (bottleneck) hoặc hiệu năng hoạt động của hệ thống.
+**`Kiểm thử hiệu năng (Performance Testing)`** nhằm xác định một số vần đề thắt cổ chai (bottleneck) hoặc hiệu năng hoạt động của hệ thống.
 Một số loại kiểm thử liên quan:
 
 -   `Kiểm thử tính bến vũng (Endurance Testing)`
@@ -141,11 +141,11 @@ Một số loại kiểm thử liên quan:
 
 `Kiểm thử chấp nhận (Acceptance Test)` được thực hiện chính bởi client nhằm cung cấp tính tin cập hệ thống, đảm bảo sản phẩm hoạt động đúng những gì client mong đợi. Với những sản phẩm có người dùng đa dạng thường có 2 loại kiểm thử chấp nhận là `Alpha Testing` và `Beta Testing`.
 
-#### Alpha Testing
+##### Alpha Testing
 
 Alpha Testing giúp phát hiện những vấn đề thực tế khi sử dụng phần mềm mà nhóm phát triển (dev) chưa biết.
 
-#### Beta Testing
+##### Beta Testing
 
 Beta Testing giúp phát hiện những vấn đề sự tương tác giữa phần mềm và những đặc trưng trong môi trường nó thực sự được sử dụng.
 
