@@ -20,14 +20,23 @@ afterAll(async () => {
 describe("pets model", () => {
     describe("insert", () => {
         it("inserts new pet into db", async () => {
-            await Pets.insert({ name: "Fluffy" });
+            await Pets.insert({ name: "Fluffy", weight: 1, color: "blue" });
             const pets = await Pets.getAll();
             console.log(pets);
             expect(pets).toHaveLength(4);
         });
         it("resolves to the inserted pet", async () => {
-            let pet = await Pets.insert({ name: "Fluffy" });
-            expect(pet).toMatchObject({ id: 4, name: "Fluffy" });
+            let pet = await Pets.insert({
+                name: "Fluffy",
+                weight: 1,
+                color: "blue",
+            });
+            expect(pet).toMatchObject({
+                id: 4,
+                name: "Fluffy",
+                weight: 1,
+                color: "blue",
+            });
         });
     });
 
@@ -41,7 +50,12 @@ describe("pets model", () => {
     describe("getById()", () => {
         it("can find a pet by id", async () => {
             const cooper = await Pets.getById(1);
-            expect(cooper).toMatchObject({ id: 1, name: "Cooper" });
+            expect(cooper).toMatchObject({
+                id: 1,
+                name: "Cooper",
+                weight: 20,
+                color: "red",
+            });
         });
     });
 });

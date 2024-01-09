@@ -72,7 +72,12 @@ describe("server.js", () => {
         it("resolves to the pet with the given id", async () => {
             let res = await request(server).get("/pets/1");
 
-            expect(res.body).toMatchObject({ id: 1, name: "Cooper" });
+            expect(res.body).toMatchObject({
+                id: 1,
+                name: "Cooper",
+                weight: 20,
+                color: "red",
+            });
         });
 
         it("responds with 404 if not in db", async () => {
@@ -86,13 +91,20 @@ describe("server.js", () => {
         it("returns the newly created pet", async () => {
             const res = await request(server)
                 .post("/pets")
-                .send({ name: "Fluffy" });
+                .send({ name: "Fluffy", weight: 1, color: "blue" });
 
-            expect(res.body).toMatchObject({ id: 4, name: "Fluffy" });
+            expect(res.body).toMatchObject({
+                id: 4,
+                name: "Fluffy",
+                weight: 1,
+                color: "blue",
+            });
         });
 
         it("after inserting a new pet, GET resolves to the updated array of pets", async () => {
-            await request(server).post("/pets").send({ name: "Fluffy" });
+            await request(server)
+                .post("/pets")
+                .send({ name: "Fluffy", weight: 1, color: "blue" });
 
             const res = await request(server).get("/pets");
 

@@ -27,3 +27,23 @@ Here is a checklist of tasks to help you put your project together:
 -   **X** Create a basic express application with a few database access functions and a few endpoints.
 -   **X** Test your endpoints manually using Postman, HTTPie or similar.
 -   **X** Test your endpoints with supertest.
+
+## Tutorial Installation
+
+```javascript
+// Install package.json
+cd node-testing2-project
+npm install
+
+// Create pets database
+npm run migrate
+
+// Add pets data
+npm run seed
+
+// Run server
+npm run start
+
+// Testing server
+npm run test
+```

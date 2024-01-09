@@ -1,7 +1,9 @@
 exports.up = function (knex) {
     return knex.schema.createTable("pets", (tbl) => {
-        tbl.increments();
-        tbl.string("name").notNullable();
+        tbl.increments("id").primary();
+        tbl.string("name", 100).notNullable();
+        tbl.integer("weight").notNullable();
+        tbl.string("color", 100).notNullable();
     });
 };
 

@@ -5,9 +5,9 @@ exports.seed = function (knex) {
         .then(function () {
             // Inserts seed entries
             return knex("pets").insert([
-                { name: "Cooper" },
-                { name: "Molly" },
-                { name: "Charlie" },
+                { name: "Cooper", weight: 20, color: "red" },
+                { name: "Molly", weight: 40, color: "yellow" },
+                { name: "Charlie", weight: 4, color: "purple" },
             ]);
         });
 };
